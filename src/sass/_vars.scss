@@ -1,0 +1,7 @@
+@use "bulma/sass/utilities" with (
+  $family-primary:  '"Press Start 2P", system-ui',
+);
+
+@use "bulma/sass/elements/button" with (
+  $button-padding-vertical: 12px
+);
