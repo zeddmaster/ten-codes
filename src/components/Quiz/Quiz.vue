@@ -53,6 +53,9 @@ function getVariantClass(variant){
     </template>
 
     <div v-else class="quiz__start">
+      <div class="title">
+        Learn ten-codes
+      </div>
       <button @click="nextQuestion" class="button is-primary is-medium">
         Start
       </button>
