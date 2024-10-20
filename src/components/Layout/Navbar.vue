@@ -18,8 +18,8 @@ import {toggleTheme} from "../../services/ThemeService.js";
           <router-link class="navbar-item" to="/">
             Home
           </router-link>
-          <router-link class="navbar-item" to="/learn">
-            Learn
+          <router-link class="navbar-item" to="/search">
+            Search
           </router-link>
         </div>
       </div>

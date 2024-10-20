@@ -5,7 +5,7 @@ import Dictionary from "../pages/Dictionary.vue"
 
 const routes = [
     { path: '/', component: HomeView },
-    { path: '/learn', component: Dictionary },
+    { path: '/search', component: Dictionary },
 ]
 
 export const router = createRouter({
