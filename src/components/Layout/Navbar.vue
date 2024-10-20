@@ -1,5 +1,5 @@
 <script setup>
-
+import {toggleTheme} from "../../services/ThemeService.js";
 </script>
 
 <template>
@@ -26,7 +26,7 @@
 
       <div class="navbar-end">
         <div class="navbar-item">
-          <button class="button is-primary is-light">
+          <button @click="toggleTheme" class="button is-primary is-light">
             Theme
           </button>
         </div>
