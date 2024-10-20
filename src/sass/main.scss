@@ -1,0 +1,9 @@
+// vendors
+@import "bulma/bulma";
+
+@import "fonts";
+@import "components/quiz";
+
+body{
+  @extend .fonts__press-start;
+}

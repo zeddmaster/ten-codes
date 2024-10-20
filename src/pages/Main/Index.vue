@@ -1,9 +1,10 @@
 <script setup>
 
+import Quiz from "../../components/Quiz/Quiz.vue";
 </script>
 
 <template>
-This is main page
+  <Quiz/>
 </template>
 
 <style scoped>
