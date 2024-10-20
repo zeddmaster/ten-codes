@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
-import './style.css'
+import { router } from "./routes/index.js";
+
+import './sass/main.scss'
+import 'bulma/bulma.scss'
+
 import App from './App.vue'
 
-createApp(App).mount('#app')
+createApp(App)
+    .use(router)
+    .mount('#app')
