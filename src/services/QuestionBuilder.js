@@ -1,4 +1,4 @@
-import {useTenCodes} from "../constants/ten-codes.js";
+import {useTenCodes} from "../plugins/constants/ten-codes.js";
 import _ from "lodash";
 
 

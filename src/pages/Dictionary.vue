@@ -1,6 +1,6 @@
 <script setup>
 
-import {useTenCodes} from "../constants/ten-codes.js";
+import {useTenCodes} from "../plugins/constants/ten-codes.js";
 import {computed, onMounted, ref} from "vue";
 
 const tenCodesRaw = useTenCodes()
@@ -28,30 +28,32 @@ onMounted(() => {
            class="input is-medium"
            placeholder="Search..."/>
 
-    <table class="table mx-auto mt-6" style="min-width: 600px;">
-      <thead>
-      <tr>
-        <th>Ten-code</th>
-        <th>Описание</th>
-      </tr>
-      </thead>
+    <div class="table-container">
+      <table class="table mx-auto mt-6" style="min-width: 600px;">
+        <thead>
+        <tr>
+          <th>Ten-code</th>
+          <th>Описание</th>
+        </tr>
+        </thead>
 
-      <tbody v-if="tenCodes.length">
-      <tr v-for="tenCode in tenCodes" :key="tenCode.code">
-        <td>{{ tenCode.code }}</td>
-        <td>{{ tenCode.title_ru }}</td>
-      </tr>
-      </tbody>
+        <tbody v-if="tenCodes.length">
+        <tr v-for="tenCode in tenCodes" :key="tenCode.code">
+          <td>{{ tenCode.code }}</td>
+          <td>{{ tenCode.title_ru }}</td>
+        </tr>
+        </tbody>
 
-      <tbody v-else>
-      <tr>
-        <td colspan="2" class="has-text-centered has-text-danger py-4">
-          Nothing found
-        </td>
-      </tr>
-      </tbody>
+        <tbody v-else>
+        <tr>
+          <td colspan="2" class="has-text-centered has-text-danger py-4">
+            Nothing found
+          </td>
+        </tr>
+        </tbody>
 
-    </table>
+      </table>
+    </div>
 
   </div>
 </template>

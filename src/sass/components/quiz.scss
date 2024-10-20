@@ -17,6 +17,10 @@
     align-items: stretch;
     justify-content: center;
     gap: 15px;
+
+    button {
+      white-space: wrap;
+    }
   }
 
   &__start {

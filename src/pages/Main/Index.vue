@@ -4,7 +4,9 @@ import Quiz from "../../components/Quiz/Quiz.vue";
 </script>
 
 <template>
-  <Quiz/>
+  <section class="section">
+    <Quiz/>
+  </section>
 </template>
 
 <style scoped>
