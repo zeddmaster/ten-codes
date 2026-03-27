@@ -11,22 +11,25 @@ EventBus.$on('hideMenu', () => {
 </script>
 
 <template>
-  <nav class="navbar is-transparent is-fixed-top">
+  <nav id="appNavbar" class="navbar is-transparent is-fixed-top">
     <div class="container">
-      <div class="navbar-brand">
+      <div class="navbar-brand is-justify-content-space-between">
         <router-link class="navbar-item" to="/">
           <span class="is-size-4 has-text-weight-bold">
             Ten-Codes
           </span>
         </router-link>
 
-        <a @click="showMenu = !showMenu" role="button"
-           class="navbar-burger has-text-dark-20" :class="{ 'is-active': showMenu }">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        <div class="navbar-item">
+          <a @click="showMenu = !showMenu" role="button"
+             class="navbar-burger has-text-dark-20" :class="{ 'is-active': showMenu }">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
       </div>
 
       <div class="navbar-menu" :class="{ 'is-active': showMenu }">
@@ -38,15 +41,16 @@ EventBus.$on('hideMenu', () => {
             Search
           </router-link>
         </div>
-      </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <button @click="toggleTheme" class="button is-primary is-light">
-            Theme
-          </button>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button @click="toggleTheme" class="button is-primary is-light">
+              Theme
+            </button>
+          </div>
         </div>
       </div>
+
     </div>
   </nav>
 </template>

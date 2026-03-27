@@ -1,0 +1,11 @@
+@use "bulma/sass/utilities/mixins";
+
+#appNavbar {
+
+  @include mixins.mobile() {
+    .navbar-brand span {
+      font-size: 14px !important;
+    }
+  }
+
+}

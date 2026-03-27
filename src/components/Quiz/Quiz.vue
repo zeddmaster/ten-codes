@@ -36,7 +36,7 @@ function getVariantClass(variant){
   <section class="quiz">
     <template v-if="question && answers.length">
 
-      <div class="quiz__question">
+      <div class="quiz__question has-background">
         {{ question.code }}
       </div>
 
@@ -53,7 +53,7 @@ function getVariantClass(variant){
     </template>
 
     <div v-else class="quiz__start">
-      <div class="title">
+      <div class="title has-text-centered is-size-5-mobile">
         Learn ten-codes
       </div>
       <button @click="nextQuestion" class="button is-primary is-medium">

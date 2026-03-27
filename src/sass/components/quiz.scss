@@ -9,6 +9,13 @@
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 30px;
+
+    top: 50px;
+    position: sticky;
+    z-index: 10;
+
+    padding: 15px 0;
+    //background-color: $body-background-color;
   }
 
   &__answers {

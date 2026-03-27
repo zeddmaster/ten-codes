@@ -12,7 +12,7 @@ onMounted(() => {
 <template>
   <Navbar/>
   <main>
-    <div class="container pt-6">
+    <div class="container pt-4">
       <RouterView />
     </div>
   </main>
