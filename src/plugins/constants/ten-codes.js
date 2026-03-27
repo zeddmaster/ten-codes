@@ -12,7 +12,7 @@ export const useTenCodes = () => {
         { code: '10-9', title_ru: 'Повторите ваше сообщение', title_en: '' },
         { code: '10-10', title_ru: 'Связь закончил, нахожусь на приеме', title_en: '' },
         { code: '10-11', title_ru: 'Говорите медленнее', title_en: '' },
-        { code: '10-12', title_ru: 'Если клиенты/посетители', title_en: '' },
+        { code: '10-12', title_ru: 'Есть клиенты/посетители', title_en: '' },
         { code: '10-13', title_ru: 'Сообщите погоду / дорожную обстановку', title_en: '' },
         { code: '10-14', title_ru: 'Сопровождаю объект', title_en: '' },
         { code: '10-15', title_ru: 'Следую с ...', title_en: '' },
